@@ -1,3 +1,26 @@
 <h1 class="mt-4">Dashboard</h1>
-<p class="lead mb-3">Welcome <%= name %> </p>
+<p class="lead mb-3">Welcome <%= user.name %> </p>
+
+<form action="/dashboard" method="POST">
+<div class="form-group">
+    <label for="Course">Course</label>
+    <input
+      type="text"
+      id="course"
+      name="course"
+      class="form-control"
+      placeholder="Enter Course"
+      value=""
+    />
+  </div>
+  <button type="submit" class="btn btn-primary btn-block">
+    Add
+  </button>
+</form>
+
+<% user.courses.forEach(course => { %>
+ <p><%= course.courseName %> </p>
+<% }) %>
+
 <a href="/users/logout" class="btn btn-secondary">Logout</a>
+

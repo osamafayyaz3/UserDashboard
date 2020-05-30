@@ -95,6 +95,7 @@ router.post('/login', (req, res, next) => {
     })(req, res, next)
 })
 
+
 // Logout Handle
 router.get('/logout', (req, res) => {
     req.logOut();

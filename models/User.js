@@ -16,6 +16,13 @@ const UserSchema = new mongoose.Schema({
         type: Date,
         default: Date.now,
     },
+
+    courses: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Courses'
+        }
+    ]
     
 })
 

@@ -1,3 +1,3 @@
 # Project Title
 
-User Authentication and Authorization System using MongoDb
+User Authentication and Authorization System using Passport and MongoDb
